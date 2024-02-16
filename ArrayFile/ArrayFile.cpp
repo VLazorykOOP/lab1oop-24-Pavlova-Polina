@@ -49,6 +49,14 @@ void task2() {
         cout << "A[" << i << "]: ";
         cin >> A[i];
     }
+    // пошук індексу першого від'ємного елемента
+    int firstNegIndex = -1;// це перше негативне
+    for (int i = 0; i < N; ++i) {
+        if (A[i] < 0) {
+            firstNegIndex = i;
+            break;
+        }
+    }
 /// <summary>
 /// 
 /// </summary>
