@@ -2,14 +2,26 @@
 //
 
 #include <iostream>
-#include <fstream>
-#include <ios>
+#include <cmath>
+#include <unordered_map>
 #include <vector>
 
-#include <time.h>
+#include <locale>
 
 using namespace std;
-
+//
+// Задача 1  (якщо к-сть непарна то перша частина буде меншою)
+// 
+void task1() {
+    int N;
+    cout << "Введіть розмір масиву N: ";
+    cin >> N;
+    int A[100];
+    cout << "Введіть елементи масиву A:" << endl;
+    for (int i = 0; i < N; ++i) {
+        cout << "A[" << i << "]: ";
+        cin >> A[i];
+    }
 /// <summary>
 /// 
 /// </summary>
