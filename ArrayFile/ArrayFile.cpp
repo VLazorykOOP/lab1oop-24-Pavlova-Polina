@@ -30,6 +30,12 @@ void task1() {
     for (int i = N / 2; i < N; ++i) {
         A[i] *= 3;
     }
+    // виведення
+    cout << "Змінений масив A:" << endl;
+    for (int i = 0; i < N; ++i) {
+        cout << A[i] << " ";
+    }
+}
 /// <summary>
 /// 
 /// </summary>
