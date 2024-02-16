@@ -26,6 +26,10 @@ void task1() {
     for (int i = 0; i < N / 2; ++i) {
         A[i] *= 2;
     }
+    // множ другої половини на 3
+    for (int i = N / 2; i < N; ++i) {
+        A[i] *= 3;
+    }
 /// <summary>
 /// 
 /// </summary>
