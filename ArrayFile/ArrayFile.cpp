@@ -22,6 +22,10 @@ void task1() {
         cout << "A[" << i << "]: ";
         cin >> A[i];
     }
+    // множення першої половини на 2
+    for (int i = 0; i < N / 2; ++i) {
+        A[i] *= 2;
+    }
 /// <summary>
 /// 
 /// </summary>
