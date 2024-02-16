@@ -57,6 +57,17 @@ void task2() {
             break;
         }
     }
+    // пошук індексу останнього мін ел серед парних додатніх
+    int lastMinIndex = -1;  //це останнє мінімальне(індекс)
+    int minEl = INT_MAX;    //це мін елемент серед парних додатніх
+    for (int i = firstNegIndex + 1; i < N; ++i) {
+        if (A[i] > 0 && A[i] % 2 == 0) {
+            if (A[i] <= minEl) {
+                minEl = A[i];
+                lastMinIndex = i;
+            }
+        }
+    }
 /// <summary>
 /// 
 /// </summary>
